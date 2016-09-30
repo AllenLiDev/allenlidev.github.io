@@ -9,3 +9,32 @@ html {
 	background-size: cover;
 }
 
+body{
+	position: relative;
+}
+h1, h3, h5{
+	text-align: center;
+}
+
+h1{
+	font-size: 72px;
+}
+
+h3{
+	font-size: 34px;
+}
+
+h5{
+	font-size: 24px;
+}
+
+.textTransition {
+	left: 0;
+	right: 0;
+	margin-top: 50%;
+}
+
+.textTransition span{
+	display: inline-block;
+	transition: 1s;
+}
