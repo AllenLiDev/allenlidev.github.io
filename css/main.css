@@ -10,31 +10,39 @@ html {
 }
 
 body{
-	position: relative;
-}
-h1, h3, h5{
-	text-align: center;
 }
 
-h1{
-	font-size: 72px;
-}
-
-h3{
-	font-size: 34px;
-}
-
-h5{
-	font-size: 24px;
-}
-
-.textTransition {
-	left: 0;
+/** DESCRIPTION **/
+.description {
+	position: absolute;
 	right: 0;
-	margin-top: 50%;
+	top: 0;
 }
 
-.textTransition span{
+/** MENU **/
+.menu {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.menu_one, .menu_two, .menu_three, .menu_four, .menu_five {
+	width: 100px;
+	min-height: 100px;
+	border: 2px solid #000;
 	display: inline-block;
-	transition: 1s;
+}
+
+.active {
+	border-color: #FFF;
+}
+
+/** FOOTER **/
+.footer{
+	position: absolute;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+	background-color: #000;
 }
