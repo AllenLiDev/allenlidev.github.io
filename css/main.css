@@ -12,11 +12,65 @@ html {
 body{
 }
 
-/** DESCRIPTION **/
-.description {
+/** TECHNOLOGIES **/
+.technologies {
 	position: absolute;
 	right: 0;
 	top: 0;
+	width: 250px;
+	height: 350px;
+	border: 2px solid #000;
+	margin: 3px;
+}
+
+.date {	
+	width: 100%;
+	height: 20px;
+	color: #FFF;
+	background-color: #000;
+	text-align: right;
+}
+
+.medals_main {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 2px 0px 0px;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #000;
+}
+
+.medals_secondary{
+	position: absolute;
+	width: 214px;
+	height: 104px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 108px 0px 0px;
+}
+
+.medals_secondary div{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	border: 2px solid #000;
+}
+
+.medals_tertiary{
+	position: absolute;
+	width: 246px;
+	height: 79px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 214px 0px 0px;
+}
+
+.medals_tertiary div{
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	border: 2px solid #000;	
 }
 
 /** MENU **/
@@ -29,7 +83,7 @@ body{
 
 .menu_one, .menu_two, .menu_three, .menu_four, .menu_five {
 	width: 100px;
-	min-height: 100px;
+	height: 100px;
 	border: 2px solid #000;
 	display: inline-block;
 }
@@ -45,4 +99,43 @@ body{
 	height: 30px;
 	width: 100%;
 	background-color: #000;
+}
+
+.footer_left {
+
+}
+
+.footer_center {
+	position: absolute;
+	margin-top: 5px;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.footer_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.button {
+	margin: 5px 10px;
+	height: 20px;
+	width: 60px;
+	box-shadow: 0px 0px 1px 1px #CCC;
+	background-color: #FFF;
+	text-align: center;
+}
+
+.button:hover {
+	box-shadow: 0px 0px 10px 1px #CCC;
+}
+
+.button:active {
+	/* to be filled for on click look */
+}
+
+.current_page_label {
+	color: #FFF;
 }
