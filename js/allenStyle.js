@@ -1,10 +1,26 @@
+/**
+* @version 1.0
+* @author Ming Allen Li
+* Webpage Jquery scripts.
+*/
+
+/**
+* On document ready, load default functions.
+* 
+*/
 $(document).ready(function(){
 	//future default load animation
 	$('.menu_one').addClass('active');
 });
 
+/*
+* variable to keep track of current active page.
+*/
 var currentActivePage = 1;
 
+/*
+* Functions to check if menu's have been clicked.
+*/
 $('.menu_one').click(function(){
 	removeActive(1);
 });
@@ -17,6 +33,10 @@ $('.menu_three').click(function(){
 	removeActive(3);
 });
 
+/**
+* Function to remove the current active menu
+* and call to add the next active page.
+*/
 function removeActive(caller){
 	if (currentActivePage == 1 && caller != 1){
 		$('.menu_one').removeClass('active');
@@ -31,6 +51,10 @@ function removeActive(caller){
 		return false;
 };
 
+/**
+* Function to add the next active page requested
+* and call for page content change.
+*/
 function addActive(newActive){
 	if(newActive == 1){
 		$('.menu_one').addClass('active');
