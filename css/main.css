@@ -18,9 +18,42 @@ body{
 	right: 0;
 	top: 0;
 	width: 250px;
-	height: 350px;
+	min-height: 350px;
 	border: 2px solid #000;
 	margin: 3px;
+}
+
+.one_box {
+	width: 100%;
+	height: 50px;
+}
+
+.one_box_icon {
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+
+.one_box_icon img{
+	width: 50px;
+	height: 50px;
+}
+
+.one_box_bar {
+	float: right;
+	width: 75%;
+}
+.one_heading {
+	width: 100%;
+	height: 35px;
+	background-color: #CCC;
+}
+
+.one_heading h2,h3 {
+	margin: 0 0;
+	padding: 0px 10px;
+	line-height: 35px;
 }
 
 .date {	
@@ -72,6 +105,7 @@ body{
 	display: inline-block;
 	border: 2px solid #000;
 }
+
 /** Description **/
 .description {
 	position: absolute;
@@ -80,6 +114,11 @@ body{
 	height: 200px;
 	border: 2px solid #000;
 }
+
+.description h1{
+	margin: 10px 10px;
+}
+
 /** MENU **/
 .menu {
 	position: absolute;
@@ -146,3 +185,5 @@ body{
 .current_page_label {
 	color: #FFF;
 }
+
+/** Contact TBD**/
