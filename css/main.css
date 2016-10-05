@@ -12,13 +12,15 @@ html {
 body{
 }
 
-/** TECHNOLOGIES **/
+/** TECHNOLOGIES
+-------------------------------------- **/
 .technologies {
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 250px;
+	min-width: 250px;
 	min-height: 350px;
+	width: 25%;
 	border: 2px solid #000;
 	margin: 3px;
 }
@@ -54,6 +56,111 @@ body{
 	margin: 0 0;
 	padding: 0px 10px;
 	line-height: 35px;
+}
+
+/** C BAR **/
+#bar_C_top {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+#bar_C_bottom {
+	width: 50%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #CCC;
+}
+
+/** HTML CSS BAR **/
+#bar_H_top {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+#bar_H_bottom {
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #CCC;
+}
+
+/**JAVA BAR **/
+#bar_J_top {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+#bar_J_bottom {
+	width: 70%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #CCC;
+}
+
+/** JAVASCRIPT BAR **/
+#bar_JS_top {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+#bar_JS_bottom {
+	width: 65%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #CCC;
+}
+
+/** SQL BAR **/
+#bar_S_top {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+#bar_S_bottom {
+	width: 55%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #CCC;
+}
+
+/** AGILE BAR **/
+#bar_A_top {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+#bar_A_bottom {
+	width: 88%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #CCC;
+}
+
+/** GIT BAR **/
+#bar_G_top {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+#bar_G_bottom {
+	width: 89%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #CCC;
 }
 
 .date {	
@@ -106,7 +213,8 @@ body{
 	border: 2px solid #000;
 }
 
-/** Description **/
+/** Description
+------------------------------------- **/
 .description {
 	position: absolute;
 	top: 50%;
@@ -119,7 +227,8 @@ body{
 	margin: 10px 10px;
 }
 
-/** MENU **/
+/** MENU 
+------------------------------------- **/
 .menu {
 	position: absolute;
 	bottom: 30px;
@@ -138,7 +247,8 @@ body{
 	border-color: #FFF;
 }
 
-/** FOOTER **/
+/** FOOTER
+------------------------------------- **/
 .footer{
 	position: absolute;
 	bottom: 0;
@@ -186,4 +296,5 @@ body{
 	color: #FFF;
 }
 
-/** Contact TBD**/
+/** Contact TBD 
+------------------------------------- **/
