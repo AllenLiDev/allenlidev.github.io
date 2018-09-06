@@ -7,9 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets//js/aos/aos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets//js/aos/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            AOS.init({ duration: 1000 });
+        });
+    </script>
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
         .navbar {
             margin-bottom: 0;
             border-radius: 0;
@@ -35,6 +47,36 @@
 
         .navbar-inverse .navbar-nav li a {
             color: #D5D5D5;
+        }
+
+        #about {
+            background: url(assets/img/lower_antelope.jpg) no-repeat center center fixed;
+            display: table;
+            height: 100%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+
+        #fixed {
+            background: url(assets/img/lower_antelope.jpg) no-repeat center center fixed;
+            display: table;
+            height: 60%;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .landing-text {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            color: #CCC;
+        }
+
+        .landing-text h1 {
+            font-size: 500%;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -63,7 +105,47 @@
             </div>
         </div>
     </nav>
-
+    <!-- Fixed Full Screen Landing -->
+    <div id="about">
+        <div class="landing-text">
+            <h1 data-aos="fade-right">HH</h1>
+            <h3 data-aos="fade-right" data-aos-delay="100">Developer</h3>
+            <a href="#skills" class="btn btn-default btn-lg">skills</a>
+        </div>
+    </div>
+    <!-- Skills -->
+    <div id="skills" class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h4>Angular</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, nam. Fugiat mollitia, quisquam
+                        alias voluptatem provident deleniti nulla et molestiae ducimus neque quam? Obcaecati, pariatur ex?
+                        Delectus deleniti molestiae fuga.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h4>Java</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta repudiandae recusandae excepturi
+                        suscipit? Dolores dolor iste pariatur consequuntur, nemo doloribus voluptas aperiam laboriosam labore
+                        quaerat repellendus tempore sed aliquam.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h4>C#</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis aperiam voluptatibus
+                        error iste quae quo iure? Odio laborum modi consequatur dolore voluptas recusandae ducimus quidem.
+                        Natus soluta optio quidem.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h4>MongoDb</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos, impedit fugiat tempora
+                        suscipit nobis, obcaecati odit facilis atque vel, esse nihil aliquam iste amet. Mollitia reprehenderit
+                        modi veritatis harum?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- secondary background img -->
+    <div id="fixed"></div>
 </body>
 
 </html>
