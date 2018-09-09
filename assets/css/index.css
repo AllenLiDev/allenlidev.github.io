@@ -41,7 +41,7 @@ html,body {
 #fixed {
     background: url(../img/lower_antelope.jpg) no-repeat center center fixed;
     display: table;
-    height: 60%;
+    height: 30%;
     position: relative;
     width: 100%;
     background-size: cover;
@@ -69,4 +69,11 @@ html,body {
 .no-gutters [class*=col-]{
     padding-right: 0;
     padding-left: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #DDD;
+    padding: 2% 2% 4% 2%;
+    color: #000;
 }
