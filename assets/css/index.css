@@ -58,3 +58,15 @@ html,body {
     font-size: 500%;
     font-weight: 700;
 }
+
+.project-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.no-gutters [class*=col-]{
+    padding-right: 0;
+    padding-left: 0;
+}
