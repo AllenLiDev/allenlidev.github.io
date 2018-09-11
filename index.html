@@ -12,16 +12,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/aos/aos.js"></script>
-    <script>
-        $(document).ready(function () {
-            AOS.init({ duration: 1000 });
-        });
-    </script>
+    <script src="assets/js/index.js"></script>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,14 +25,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/home.png" alt="logo">
+                <!-- Rotate 15% and use AOS -->
+                <a class="navbar-brand" href="#home">
+                    <h1 data-aos="fade-down-right">Headhuntar</h1>
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Favorites</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -44,11 +41,12 @@
         </div>
     </nav>
     <!-- Fixed Full Screen Landing -->
-    <div id="about">
+    <div id="home">
         <div class="landing-text">
-            <h1 data-aos="fade-right">HH</h1>
-            <h3 data-aos="fade-right" data-aos-delay="100">Developer</h3>
-            <a href="#skills" class="btn btn-default btn-lg">skills</a>
+            <h1 data-aos="fade-right">Allen Li</h1>
+            <h3 data-aos="fade-right" data-aos-delay="100">Front-End Developer</h3>
+            <!-- NOT QUITE SURE ABOUT THIS UGLY BUTTON, reskin or remove -->
+            <a href="#skills" class="btn btn-default btn-lg">about me</a>
         </div>
     </div>
     <!-- Skills -->
@@ -80,7 +78,7 @@
                         Natus soluta optio quidem.</p>
                 </div>
                 <div data-aos="fade-right" data-aos-delay class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <h4>MongoDb</h4>
+                    <h4>Something I'm Learning</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos, impedit fugiat
                         tempora
                         suscipit nobis, obcaecati odit facilis atque vel, esse nihil aliquam iste amet. Mollitia
@@ -99,8 +97,11 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="project-box">
                         <div class="hover-unhide">
-                            <h3>Test</h3>
-                            <h5>show this text</h5>
+                            <div class="text-elements">
+                                <h3>Operator</h3>
+                                <h5>A Math Game</h5>
+                                <p>1 sentence</p>
+                            </div>
                         </div>
                         <img src="assets/img/lower_antelope.JPG" class="img-fluid" alt="desc">
                     </div>
@@ -108,8 +109,11 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="project-box">
                         <div class="hover-unhide">
-                            <h3>Test</h3>
-                            <h5>show this text</h5>
+                            <div class="text-elements">
+                                <h3>Shift Picker</h3>
+                                <h5>Shift Management App</h5>
+                                <p>1 sentence</p>
+                            </div>
                         </div>
                         <img src="assets/img/lower_antelope.JPG" class="img-fluid" alt="desc">
                     </div>
@@ -117,8 +121,11 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="project-box">
                         <div class="hover-unhide">
-                            <h3>Test</h3>
-                            <h5>show this text</h5>
+                            <div class="text-elements">
+                                <h3>Swim Van</h3>
+                                <h5>Swimming Lessons Information</h5>
+                                <p>1 sentence</p>
+                            </div>
                         </div>
                         <img src="assets/img/lower_antelope.JPG" class="img-fluid" alt="desc">
                     </div>
@@ -130,13 +137,13 @@
     <footer class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-4">
-                <h3>contact</h3>
+                <h3>Contact</h3>
             </div>
             <div class="col-sm-4">
-                <h3>social</h3>
+                <h3>Github</h3>
             </div>
             <div class="col-sm-4">
-                <h3>stuff</h3>
+                <h3>Resume</h3>
             </div>
         </div>
     </footer>
