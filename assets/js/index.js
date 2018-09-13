@@ -10,7 +10,9 @@ let getGithub = (username) => {
         url: "https://api.github.com/users/" + username + "/events",
         dataType: "json",
         success: function(data) {
-            console.log(data);
+            let lastCommit = new Date(data[0].created_at).toDateString();
+            let textElement = document.getElementById("lastCommit");
+            textElement.innerText = "Last Commit: " + lastCommit;
         }
     });
 }
