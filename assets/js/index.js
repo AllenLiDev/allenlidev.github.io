@@ -3,6 +3,7 @@ $(document).ready(function () {
     getGithub('headhuntar');
 });
 
+// Get Github last commit of input: username
 let getGithub = (username) => {
     $.ajax({
         async: false,
@@ -16,16 +17,3 @@ let getGithub = (username) => {
         }
     });
 }
-
-// var xmlhttp = new XMLHttpRequest();
-// xmlhttp.onreadystatechange = function() {
-//   if (this.readyState == 4 && this.status == 200) {
-//     displayProjects(JSON.parse(this.responseText));
-//   }
-// };
-// xmlhttp.open('GET', 'api/projects');
-// xmlhttp.send();
-
-// https://api.github.com/users/headhuntar/events
-// git hub api to get user event
-

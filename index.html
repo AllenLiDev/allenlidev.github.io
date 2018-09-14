@@ -32,16 +32,16 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">About</a></li>
-                    <li><a href="#">Favorites</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Fixed Full Screen Landing -->
-    <div id="home">
+    <div id="about">
         <div class="landing-text">
             <h1 data-aos="fade-right">Allen Li</h1>
             <h3 data-aos="fade-right" data-aos-delay="100">Front-End Developer</h3>
@@ -96,37 +96,43 @@
             <div class="row no-gutters">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="project-box">
-                        <div class="hover-unhide">
-                            <div class="text-elements">
-                                <h3>Operator</h3>
-                                <h5>A Math Game</h5>
-                                <p>1 sentence</p>
+                        <a href="#" target="_blank">
+                            <div class="hover-unhide">
+                                <div class="text-elements">
+                                    <h3>Shift Picker</h3>
+                                    <h5>Shift Management Application</h5>
+                                    <p>1 sentence</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <img src="assets/img/lower_antelope.JPG" class="img-fluid" alt="desc">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="project-box">
-                        <div class="hover-unhide">
-                            <div class="text-elements">
-                                <h3>Shift Picker</h3>
-                                <h5>Shift Management App</h5>
-                                <p>1 sentence</p>
+                        <a href="https://operator-game.herokuapp.com" target="_blank">
+                            <div class="hover-unhide">
+                                <div class="text-elements">
+                                    <h3>Operator</h3>
+                                    <h5>An arithmetic Game</h5>
+                                    <p>1 sentence</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <img src="assets/img/lower_antelope.JPG" class="img-fluid" alt="desc">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="project-box">
-                        <div class="hover-unhide">
-                            <div class="text-elements">
-                                <h3>Swim Van</h3>
-                                <h5>Swimming Lessons Information</h5>
-                                <p>1 sentence</p>
+                        <a href="https://swim-van.herokuapp.com" target="_blank">
+                            <div class="hover-unhide">
+                                <div class="text-elements">
+                                    <h3>Swim Van</h3>
+                                    <h5>Swimming Lessons Information</h5>
+                                    <p>1 sentence</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <img src="assets/img/lower_antelope.JPG" class="img-fluid" alt="desc">
                     </div>
                 </div>
@@ -134,17 +140,20 @@
         </div>
     </div>
     <!-- Footer Section -->
-    <footer class="container-fluid text-center">
+    <footer id="contact" class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-4">
                 <h3>Contact</h3>
             </div>
             <div class="col-sm-4">
-                <h3>Github</h3>
+                <a class="btn btn-social-icon btn-lg btn-github">
+                    <i class="fa fa-github"></i>
+                </a>
                 <p id="lastCommit"></p>
             </div>
             <div class="col-sm-4">
                 <h3>Resume</h3>
+                <a href="./assets/pdf/allenLiTechResume.pdf" class="btn btn-default btn-lg" target="_blank">open</a>
             </div>
         </div>
     </footer>
