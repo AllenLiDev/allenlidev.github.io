@@ -7,7 +7,7 @@ Allenlidev.com
 Using
 - bootstrap https://github.com/twbs/bootstrap
 - aos library https://github.com/michalsnik/aos/tree/v2
--
+- fontawesome free icon library https://fontawesome.com/
 
 TO DO
     1. setup content

@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Allen Li - Web Developer</title>
+    <title>Allen Li - Front-End Developer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/js/aos/aos.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,7 +17,7 @@
     <script src="assets/js/index.js"></script>
 </head>
 
-<body>
+<body id="#top">
     <!-- Navigation -->
     <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container-fluid">
@@ -27,14 +29,14 @@
                 </button>
                 <!-- Rotate 15% and use AOS -->
                 <a class="navbar-brand" href="#home">
-                    <h1 data-aos="fade-down-right">Headhuntar</h1>
+                    <h1>Al</h1>
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#about">About</a></li>
+                    <li class="active"><a href="#top">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -53,37 +55,38 @@
     <div id="skills" class="padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <h4>Angular</h4>
+                <div class="col-lg-12">
+                    <h3>These are my skills</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <i class="fas fa-toolbox fa-3x"></i>
+                    <h4>I'm Good At</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, nam. Fugiat mollitia,
                         quisquam
                         alias voluptatem provident deleniti nulla et molestiae ducimus neque quam? Obcaecati, pariatur
                         ex?
                         Delectus deleniti molestiae fuga.</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <h4>Java</h4>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <i class="fab fa-react fa-3x"></i>
+                    <i class="fab fa-app-store-ios fa-3x"></i>
+                    <h4>I'm Learning</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dicta repudiandae recusandae
                         excepturi
                         suscipit? Dolores dolor iste pariatur consequuntur, nemo doloribus voluptas aperiam laboriosam
                         labore
                         quaerat repellendus tempore sed aliquam.</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <h4>C#</h4>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <i class="fas fa-robot fa-3x"></i>
+                    <h4>I'm Interested in</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis aperiam
                         voluptatibus
                         error iste quae quo iure? Odio laborum modi consequatur dolore voluptas recusandae ducimus
                         quidem.
                         Natus soluta optio quidem.</p>
-                </div>
-                <div data-aos="fade-right" data-aos-delay class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <h4>Something I'm Learning</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos, impedit fugiat
-                        tempora
-                        suscipit nobis, obcaecati odit facilis atque vel, esse nihil aliquam iste amet. Mollitia
-                        reprehenderit
-                        modi veritatis harum?</p>
                 </div>
             </div>
         </div>
@@ -94,7 +97,7 @@
     <div id="projects" class="no-padding">
         <div class="container-fluid">
             <div class="row no-gutters">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="project-box">
                         <a href="#" target="_blank">
                             <div class="hover-unhide">
@@ -108,7 +111,7 @@
                         <img src="assets/img/lower_antelope.JPG" class="img-fluid" alt="desc">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="project-box">
                         <a href="https://operator-game.herokuapp.com" target="_blank">
                             <div class="hover-unhide">
@@ -122,7 +125,7 @@
                         <img src="assets/img/lower_antelope.JPG" class="img-fluid" alt="desc">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="project-box">
                         <a href="https://swim-van.herokuapp.com" target="_blank">
                             <div class="hover-unhide">
@@ -147,7 +150,7 @@
             </div>
             <div class="col-sm-4">
                 <a class="btn btn-social-icon btn-lg btn-github">
-                    <i class="fa fa-github"></i>
+                    <i class="fab fa-github fa-3x"></i>
                 </a>
                 <p id="lastCommit"></p>
             </div>

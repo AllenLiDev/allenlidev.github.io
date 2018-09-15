@@ -1,5 +1,10 @@
-html,body {
+html {
     height: 100%;
+}
+
+body {
+    height: 100%;
+    padding-top: 70px;
 }
 
 .navbar {
@@ -7,7 +12,7 @@ html,body {
     border-radius: 0;
     background-color: #5E4485;
     color: #FFF;
-    padding: 1% 0;
+    padding: 10px 0;
     font-size: 1.2em;
     border: 0;
 }
@@ -38,10 +43,16 @@ html,body {
     background-size: cover;
 }
 
+#skills {
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+
 #fixed {
     background: url(../img/lower_antelope.jpg) no-repeat center center fixed;
     display: table;
-    height: 30%;
+    height: 20%;
     position: relative;
     width: 100%;
     background-size: cover;
@@ -78,7 +89,7 @@ html,body {
 footer {
     width: 100%;
     background-color: #DDD;
-    padding: 2% 2% 4% 2%;
+    padding: 50px 0 25px;
     color: #000;
 }
 
@@ -105,4 +116,8 @@ footer {
 
 .hover-unhide:hover {
     opacity: .6;
+}
+
+.fas, .fab {
+    color: red;
 }
