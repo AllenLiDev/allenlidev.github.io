@@ -1,10 +1,10 @@
 $(document).ready(function () {
     AOS.init({ duration: 1000 });
-    getGithub('headhuntar');
-    setInterval(changeText, 200);
+    getGithub(githubUsername);
+    setTimeout(() => {clearText(19)}, 5000);
 });
-// record current text index
-var currentTextIndex = 0;
+
+var githubUsername = "headhuntar";
 
 // Get Github last commit of input: username
 let getGithub = (username) => {
@@ -33,28 +33,47 @@ let getGithub = (username) => {
 }
 
 // manip text on set interval takes input: none
-let changeText = () => {
+let writeText = (textToWrite) => {
     let textElement = document.getElementById("changingText");
+    let count = 0;
+    let length = textToWrite.length;
+    let writingInterval = setInterval(() => {
+        count++;
+        if (count > length) {
+            clearInterval(writingInterval);
+            setTimeout(() => {clearText(length)}, 3000);
+        } else {
+            textElement.innerText = textToWrite.substring(0, count);
+        }
+    }, 150);
+}
 
-    if (++currentTextIndex === 6) {
-        currentTextIndex = 1;
-    }
+// namip text on set interval to blank then call next text to write input: current string length
+let clearText = (curLength) => {
+    let textElement = document.getElementById("changingText");
+    let clearingInterval = setInterval(() => {
+        curLength--;
+        if(curLength == 0){
+            clearInterval(clearingInterval);
+            writeText(changeText());
+        } else {
+            textElement.innerText = textElement.innerText.substring(0, curLength);
+        }
+    }, 100);
+}
 
-    switch (currentTextIndex) {
+// gets the next index to run input: none
+let changeText = () => {
+    switch (Math.floor((Math.random() * 5) + 1)) {
         case 1:
-            textElement.innerText = "cha";
-            return;
+            return "Front-End Developer";
         case 2:
-            textElement.innerText = "chan";
-            return;
+            return "MEAN Stack User";
         case 3:
-            textElement.innerText = "chang";
-            return;
+            return "Lifeguard, Baller, Gamer";
         case 4:
-            textElement.innerText = "change";
-            return;
+            return "Problem Solver, Critical Thinker";
         case 5:
-            textElement.innerText = "changed";
-            return;
+            return "Swift & React Learner";
     }
 }
