@@ -45,17 +45,21 @@
     <!-- Fixed Full Screen Landing -->
     <div id="about">
         <div class="landing-text">
-            <h1 data-aos="fade-right">Allen Li</h1>
-            <h3 id="changingText" data-aos="fade-right" data-aos-delay="100">Front-End Developer</h3>
+            <h1>Allen Li</h1>
+            <h3 id="changingText">Front-End Developer</h3>
             <!-- NOT QUITE SURE ABOUT THIS UGLY BUTTON, reskin or remove -->
-            <a href="#skills" class="btn btn-default btn-lg">about me</a>
+            <a class="btn btn-default btn-lg">about me</a>
         </div>
     </div>
     <!-- Skills -->
     <div id="skills" class="padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h2>A Little About Me</h2>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <i class="fas fa-toolbox fa-3x"></i>
                     <h4>Skill set</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, nam. Fugiat mollitia,
@@ -64,7 +68,9 @@
                         ex?
                         Delectus deleniti molestiae fuga.</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <i class="fab fa-react fa-3x"></i>
                     <i class="fab fa-app-store-ios fa-3x"></i>
                     <h4>Learning</h4>
@@ -74,16 +80,18 @@
                         labore
                         quaerat repellendus tempore sed aliquam.</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <i class="fas fa-robot fa-3x"></i>
                     <h4>Interested in</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis aperiam
-                        voluptatibus
-                        error iste quae quo iure? Odio laborum modi consequatur dolore voluptas recusandae ducimus
-                        quidem.
-                        Natus soluta optio quidem.</p>
+                    <p>Create ML Framework's ability to create and train machine learning models. It provides
+                        possibilities use CORE ML 2 on your mobile device and
+                        integrated it into mobile apps.</p>
+                    <a href="https://developer.apple.com/machine-learning/">
+                        <p class="text-centered">Core ML 2 - Apple
+                        </p>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <i class="fas fa-life-ring fa-3x"></i>
                     <h4>History of</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis aperiam
@@ -100,18 +108,21 @@
     <!-- Projects Section -->
     <div id="projects" class="no-padding">
         <div class="container-fluid">
+            <div class="row text-center">
+                <h2>Projects I've worked on</h2>
+            </div>
             <div class="row no-gutters">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="project-box">
-                        <a href="#" target="_blank">
-                            <div class="hover-unhide">
-                                <div class="text-elements">
-                                    <h3>Shift Picker</h3>
-                                    <h5>Shift Management Application</h5>
-                                    <p>1 sentence</p>
-                                </div>
+                        <!-- <a href="#" target="_blank"> -->
+                        <div class="hover-unhide">
+                            <div class="text-elements">
+                                <h3>Shift Picker</h3>
+                                <h5>A Shift Management Application</h5>
+                                <p>1 sentence</p>
                             </div>
-                        </a>
+                        </div>
+                        <!-- </a> -->
                         <img src="assets/img/shiftpicker.jpg" class="img-fluid" alt="desc">
                     </div>
                 </div>
@@ -135,7 +146,7 @@
                             <div class="hover-unhide">
                                 <div class="text-elements">
                                     <h3>Swim Van</h3>
-                                    <h5>Swimming Lessons Information</h5>
+                                    <h5>A Swimming Website</h5>
                                     <p>1 sentence</p>
                                 </div>
                             </div>
@@ -149,29 +160,32 @@
     <!-- Footer Section -->
     <footer id="contact" class="container-fluid text-center">
         <div class="row">
-            <div class="col-sm-4">
-                <h3>Contact</h3>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <span class="fas fa-envelope fa"></span>allenlidev@gmail.com
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fas fa-mobile fa"></span>(778) 896-9255
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fab fa-linkedin-in"></span>allenlidev
-                    </li>
-                </ul>
+            <h2>Contact Info</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="btn btn-social-icon btn-lg" href="https://www.linkedin.com/in/allenlidev/" target="_blank">
+                    <i class="fab fa-linkedin-in fa-3x"></i>
+                </a>
+                <p>Linkedin</p>
             </div>
-            <div class="col-sm-4">
-                <a class="btn btn-social-icon btn-lg btn-github" href="https://github.com/headhuntar">
+            <div class="col-sm-3">
+                <a class="btn btn-social-icon btn-lg" href="https://github.com/headhuntar" target="_blank">
                     <i class="fab fa-github fa-3x"></i>
                 </a>
                 <p id="lastCommit"></p>
             </div>
-            <div class="col-sm-4">
-                <h3>Resume</h3>
-                <a href="./assets/pdf/allenLiTechResume.pdf" class="far fa-file" target="_blank">alleLiDevResume.pdf</a>
+            <div class="col-sm-3">
+                <a class="btn btn-social-icon btn-lg" href="assets/pdf/allenLiTechResume.pdf" target="_blank">
+                    <i class="far fa-file-pdf fa-3x"></i>
+                </a>
+                <p>Resume</p>
+            </div>
+            <div class="col-sm-3">
+                <a class="btn btn-social-icon btn-lg" href="mailto:allenlidev@gmail.com" data-text="allenlidev@gmail.com">
+                    <i class="far fa-envelope fa-3x"></i>
+                </a>
+                <p>allenLiDev@gmail.com</p>
             </div>
         </div>
     </footer>

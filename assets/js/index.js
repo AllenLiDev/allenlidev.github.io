@@ -1,10 +1,15 @@
-$(document).ready(function () {
+$(document).ready(() => {
     AOS.init({ duration: 1000 });
     getGithub(githubUsername);
     setTimeout(() => {clearText(19)}, 5000);
 });
 
 var githubUsername = "headhuntar";
+
+let scroll = (id) => {
+    document.getElementById(id).scrollIntoView({behavior: "smooth", block: "start"});
+    return false;
+}
 
 // Get Github last commit of input: username
 let getGithub = (username) => {

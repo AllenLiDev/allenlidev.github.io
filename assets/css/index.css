@@ -51,9 +51,21 @@ body {
     background-size: cover;
 }
 
+#skills h2 {
+    color: #263547;
+}
+
+#skills h4 {
+    color: #263547;
+}
+
 #skills {
     text-align: center;
     padding: 50px 0;
+}
+
+#skills .row [class*=col-] {
+    padding: 25px 0 0;
 }
 
 #fixed {
@@ -104,6 +116,14 @@ footer {
     color: #EEB14F;
 }
 
+footer li {
+    list-style: none;
+}
+
+footer .row [class*=col-]{
+    padding: 25px 0 0;
+}
+
 .hover-unhide {
     display: block;
     position: absolute;
@@ -129,7 +149,7 @@ footer {
     opacity: .85;
 }
 
-.fas, .fab {
+[class*=fa] {
     color: #EEB14F;
 }
 
