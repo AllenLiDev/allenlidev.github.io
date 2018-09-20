@@ -6,6 +6,7 @@ $(document).ready(() => {
 
 var githubUsername = "headhuntar";
 
+// scroll to element input: element id, preset smooth and go to top of element
 let scroll = (id) => {
     document.getElementById(id).scrollIntoView({behavior: "smooth", block: "start"});
     return false;
@@ -13,18 +14,6 @@ let scroll = (id) => {
 
 // Get Github last commit of input: username
 let getGithub = (username) => {
-    // depreciated
-    // $.ajax({
-    //     async: false,
-    //     type: "GET",
-    //     url: "https://api.github.com/users/" + username + "/events",
-    //     dataType: "json",
-    //     success: function (data) {
-    //         let lastCommit = new Date(data[0].created_at).toDateString();
-    //         let textElement = document.getElementById("lastCommit");
-    //         textElement.innerText = "Last Commit: " + lastCommit;
-    //     }
-    // });
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {

@@ -42,7 +42,7 @@ body {
    color: #EEB14F;
 }
 
-#about {
+#home {
     background: url(../img/lower_antelope.JPG) no-repeat center center fixed;
     display: table;
     height: 100%;
@@ -59,6 +59,10 @@ body {
     color: #263547;
 }
 
+#skills p {
+    padding: 0 25px 0;
+}
+
 #skills {
     text-align: center;
     padding: 50px 0;
@@ -68,29 +72,17 @@ body {
     padding: 25px 0 0;
 }
 
-#fixed {
+.fixed-background {
     background: url(../img/lower_antelope.jpg) no-repeat center center fixed;
     display: table;
-    height: 20%;
+    height: 30%;
     position: relative;
     width: 100%;
     background-size: cover;
 }
 
-#projects {
-    padding: 50px 0;
-}
-
-#projects h2 {
-    color: #263547;
-}
-
-#projects .row [class*=col-] {
-    padding: 25px 0 0;
-}
-
-#contact ul{
-    text-align: left
+#projects p {
+    padding: 0 25px 0;
 }
 
 .landing-text {
