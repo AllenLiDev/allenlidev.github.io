@@ -14,11 +14,33 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    padding: 0 25px 0;
+}
+
+hr {
+    border-color: #EEB14F;
+}
+
+.primary-color {
+    color: #EEB14F
+}
+
+.primary-background-color {
+    background-color: #EEB14F
+}
+
+.secondary-color {
+    color: #263547;
+}
+
+.secondary-background-color {
+    background-color: #263547;
+}
+
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    background-color: #263547;
-    color: #EEB14F;
     padding: 10px 0;
     font-size: 1.2em;
     border: 0;
@@ -51,23 +73,6 @@ body {
     background-size: cover;
 }
 
-#skills h2 {
-    color: #263547;
-}
-
-#skills h4 {
-    color: #263547;
-}
-
-#skills p {
-    padding: 0 25px 0;
-}
-
-#skills {
-    text-align: center;
-    padding: 50px 0;
-}
-
 #skills .row [class*=col-] {
     padding: 25px 0 0;
 }
@@ -81,13 +86,12 @@ body {
     background-size: cover;
 }
 
-#projects p {
-    padding: 0 25px 0;
+.section-padding {
+    padding: 50px 0;
 }
 
 .landing-text {
     display: table-cell;
-    text-align: center;
     vertical-align: middle;
     color: #FFF;
 }
@@ -108,20 +112,19 @@ body {
    max-width: 100%;
 }
 
+.sticky-link {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.sticky-link:hover {
+    color: #FFF;
+}
+
 .no-gutters [class*=col-]{
     padding-right: 0;
     padding-left: 0;
-}
-
-footer {
-    width: 100%;
-    background-color: #263547;
-    padding: 50px 0 25px;
-    color: #EEB14F;
-}
-
-footer li {
-    list-style: none;
 }
 
 footer .row [class*=col-]{
@@ -134,16 +137,12 @@ footer .row [class*=col-]{
     bottom: 0;
     width: 100%;
     height: 100%;
-    text-align: center;
-    color: #EEB14F;
     opacity: 0;
-    background-color: #263547;
     transition: .35s;
 }
 
 .project-box .text-elements {
     width: 100%;
-    text-align: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -156,4 +155,3 @@ footer .row [class*=col-]{
 [class*=fa] {
     color: #EEB14F;
 }
-
