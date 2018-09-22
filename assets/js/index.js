@@ -7,8 +7,9 @@ $(document).ready(() => {
 var githubUsername = "headhuntar";
 
 // scroll to element input: element id, preset smooth and go to top of element
-let scroll = (id) => {
-    document.getElementById(id).scrollIntoView({behavior: "smooth", block: "start"});
+let smoothScroll = (id) => {
+    console.log(id);
+    document.getElementById(id).scrollIntoView({behavior: "smooth", block: "center"});
     return false;
 }
 
@@ -35,7 +36,7 @@ let writeText = (textToWrite) => {
         count++;
         if (count > length) {
             clearInterval(writingInterval);
-            setTimeout(() => {clearText(length)}, 3000);
+            setTimeout(() => {clearText(length)}, 3500);
         } else {
             textElement.innerText = textToWrite.substring(0, count);
         }
